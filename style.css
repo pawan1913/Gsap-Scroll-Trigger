@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Gilroy Light";
+}
+
+html,body{
+ 
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    padding: 0 30px;
+    position: relative;
+    
+}
+
+#page1 #nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white; 
+    width: 100%;
+    align-items: center;
+    padding: 4vh 0vh 1vh 0vh;
+}
+
+#page1 #nav .items ul{
+    list-style: none;
+    display: flex;
+} 
+
+#page1 #nav .items ul li{
+    padding:  0px 10px;
+    font-size: 20px;
+}
+
+#page1 #left {
+    /* border: 2px solid salmon; */
+    width: 50%;
+    height: 80vh;
+   padding: 40px 15px;
+   margin-top: 2vh;
+}
+.container #left h1{
+    font-size: 100px;
+    line-height: 110px;
+}
+
+.container{
+    display: flex;
+}
+#page1 #right{
+    padding: 30px ;
+    width: 45%;
+    height: 75vh;
+   
+}
+
+#page1  #right img{
+ width: 100%;
+ border-radius: 10px;
+ height: 100%;
+ object-fit: cover;
+ object-position: center;
+}
+
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(25, 33, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;               
+}
+
+#page2 .box{
+   height: 250px;
+   width: 350px ;
+   border: 2px solid black;
+   border-radius: 10px;
+   margin:  0px 10px;
+   background-color: rgb(0, 0, 0);
+   color: white;
+   padding: 10px;
+   
+}  
+
+@media (max-width:768px) {
+    #page1{
+        height: auto;
+        padding: 0px 10px;
+    }
+
+    #page1 #nav{
+        font-size: 12px;
+    }
+
+    .items{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container #left h1{
+        font-size: 45px;
+        line-height: 60px;
+
+    }
+    #page1 #left{
+        height: 30vh;
+
+    }
+    
+    #page1 #right{
+        width: 100%;
+        padding-bottom: 50px;
+        padding: 20px 6px 50px 6px;
+    }
+
+    #page2{
+        display: flex;
+        flex-direction: column;
+        padding-top: 8vh;
+        height: auto;
+        padding-bottom: 10vh;
+    }
+
+    #page2 .box{
+        width: 90%;
+        height: 250px;
+        margin-top: 20px;
+    }
+}
